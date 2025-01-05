@@ -69,6 +69,7 @@ body {
     .typing { 
         animation: none !important; /* Desactiva las animaciones */
         border-right: none !important; /* Elimina el cursor parpadeante */
+        font-size:1em;
     }
 
     .highlight {
