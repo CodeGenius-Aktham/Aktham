@@ -76,10 +76,9 @@ body {
         animation: none !important; /* Desactiva el cambio de fuente */
     }
 
-    .card, .card2{
-        height: none;
-        width: none;
-    }
+     .card, .card2 {
+        display: none !important; /* Oculta las cartas */
+     } 
 }
 
 
