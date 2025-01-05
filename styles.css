@@ -75,6 +75,11 @@ body {
     .highlight {
         animation: none !important; /* Desactiva el cambio de fuente */
     }
+
+    .card, .card2{
+        height: none;
+        width: none;
+    }
 }
 
 
