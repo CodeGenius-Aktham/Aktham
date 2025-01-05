@@ -89,7 +89,7 @@ body {
     .typing { 
         animation: none !important; /* Desactiva las animaciones */
         border-right: none !important; /* Elimina el cursor parpadeante */
-       
+        text-size-adjust: 20px;
     }
 
     .highlight {
@@ -102,7 +102,7 @@ body {
 
      .header{
         height: 90%;
-        
+
      }
 }
 
@@ -329,7 +329,8 @@ body {
 .card, .card1, .card2 {
     background: linear-gradient(0deg, #000, #272727); 
     border-radius: 16px; 
-    z-index: 1; } 
+    z-index: 1; 
+} 
 
 .card { 
     width: 380px; 
