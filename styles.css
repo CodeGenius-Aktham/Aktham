@@ -64,6 +64,27 @@ body {
     80% { font-family: 'Lobster', cursive; } 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 975px) {
     .typing { 
         animation: none !important; /* Desactiva las animaciones */
@@ -80,7 +101,8 @@ body {
      } 
 
      .header{
-        height: 40px;
+        height: 90%;
+        
      }
 }
 
