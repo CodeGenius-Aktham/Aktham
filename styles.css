@@ -78,6 +78,10 @@ body {
      .card, .card2 {
         display: none !important; /* Oculta las cartas */
      } 
+
+     .header{
+        height: 40px;
+     }
 }
 
 /*---------------------------------------------------------------------------*/
