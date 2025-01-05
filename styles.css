@@ -300,7 +300,76 @@ body {
 
      /* Espacio entre las tarjetas */ 
     } 
-.card, .card1, .card2 { background: linear-gradient(0deg, #000, #272727); border-radius: 16px; z-index: 1; } .card, .card1, .card2 { width: 380px; height: 508px; margin-bottom: 40px; } .tools, .tools1, .tools2 { display: flex; align-items: center; padding: 9px; } .tools1 { padding: 18px; } .tools2 { padding: 27px; /* Incrementa el padding */ } .circle, .circle1, .circle2 { padding: 0 8px; } .circle1 { padding: 0 8px; } .circle2 { padding: 0 8px; /* Incrementa el padding */ } .box, .box1, .box2 { display: inline-block; align-items: center; width: 20px; height: 20px; padding: 2px; border-radius: 50%; } .box1 { width: 20px; height: 20px; padding: 2px; } .box2 { width: 20px; height: 20px; padding: 2px; } .red, .red1, .red2 { background-color: #ff605c; } .yellow, .yellow1, .yellow2 { background-color: #ffbd44; } .green, .green1, .green2  background-color
+.card, .card1, .card2 {
+    background: linear-gradient(0deg, #000, #272727); 
+    border-radius: 16px; 
+    z-index: 1; } 
+
+.card { 
+    width: 380px; 
+    height: 508px; 
+    margin-bottom: 40px; 
+} 
+
+.card1 { 
+    width: 380px; 
+    height: 508px; 
+    margin-bottom: 40px; 
+} 
+
+.card2 { 
+    width: 380px; 
+    height: 508px; 
+    margin-bottom: 40px; 
+}
+
+.tools, .tools1, .tools2 { display: flex; 
+    align-items: center; 
+    padding: 9px; 
+} 
+.tools1 { 
+    padding: 18px; 
+} 
+.tools2 { 
+    padding: 27px; /* Incrementa el padding */ 
+} 
+.circle, .circle1, .circle2 { 
+    padding: 0 8px; 
+} 
+.circle1 { 
+    padding: 0 8px; 
+} 
+.circle2 { 
+    padding: 0 8px; /* Incrementa el padding */ 
+} 
+.box, .box1, .box2 {
+     display: inline-block; 
+     align-items: center; 
+     width: 20px; 
+     height: 20px; 
+     padding: 2px; 
+     border-radius: 50%; 
+    } 
+.box1 { 
+    width: 20px; 
+    height: 20px; 
+    padding: 2px; 
+} 
+.box2 { 
+    width: 20px; 
+    height: 20px; 
+    padding: 2px;
+} 
+.red, .red1, .red2 { 
+    background-color: #ff605c; 
+} 
+.yellow, .yellow1, .yellow2 { 
+    background-color: #ffbd44; 
+} 
+.green, .green1, .green2 { 
+    background-color: #00ca4e; 
+}
+
 
 /* From Uiverse.io by david-mohseni */ 
 .wrapper {
