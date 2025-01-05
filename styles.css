@@ -1,9 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif; /* Tipografía principal */
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Permite que los elementos estén en una columna */
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -13,17 +13,81 @@ body {
     align-items: center;
     background: linear-gradient(to right, #004d00, #333);
     color: white;
-    padding: 50px; /* Incrementa el padding */
+    padding: 100px; /* Incrementa el padding */
     border-radius: 8px;
+    margin-top: 100px;
     width: 90%;
     max-width: 1000px; /* Incrementa el tamaño máximo del contenedor */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px; /* Añade un margen inferior para separar el encabezado del formulario */
 }
+
 .profile-pic {
     width: 250px; /* Incrementa el tamaño de la imagen */
     height: 250px;
     object-fit: cover;
-    border-radius: 8px;
+    margin-right: 30px; /* Incrementa el margen */
+    flex-shrink: 0; /* Mantiene el tamaño de la imagen fijo */
+}
+.text-container {
+    flex-grow: 1; /* Hace que el contenedor del texto ocupe todo el espacio disponible */
+}
+
+.typing { 
+    font-size: 3em; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    animation: typing 3.5s steps(40, end), 
+    blink-caret .75s step-end infinite; 
+} 
+
+@keyframes typing { 
+    from { width: 0; } 
+    to { width: 26em; } /* Ajusta este ancho según tu texto */ 
+} 
+
+@keyframes blink-caret { 
+    from, to { border-color: transparent; } 
+    50% { border-color: orange; } 
+} 
+
+.highlight { 
+    display: inline-block; 
+    animation: changeFont 2.5s infinite; 
+} 
+
+@keyframes changeFont { 
+    0%, 100% { font-family: 'Roboto', sans-serif; } 
+    20% { font-family: 'Amatic SC', cursive; } 
+    40% { font-family: 'Courier Prime', monospace; } 
+    60% { font-family: 'Indie Flower', cursive; } 
+    80% { font-family: 'Lobster', cursive; } 
+}
+
+/*---------------------------------------------------------------------------*/
+@media (max-width: 975px) {
+    .typing { 
+        animation: none !important; /* Desactiva las animaciones */
+        border-right: none !important; /* Elimina el cursor parpadeante */
+    }
+
+    .highlight {
+        animation: none !important; /* Desactiva el cambio de fuente */
+    }
+}
+
+
+
+
+
+
+
+
+
+.profile-pic {
+    width: 250px; /* Incrementa el tamaño de la imagen */
+    height: 250px;
+    object-fit: cover;
     margin-right: 30px; /* Incrementa el margen */
     flex-shrink: 0; /* Mantiene el tamaño de la imagen fijo */
 }
@@ -31,7 +95,7 @@ body {
     flex-grow: 1; /* Hace que el contenedor del texto ocupe todo el espacio disponible */
 }
 .typing {
-    font-size: 2em; /* Incrementa el tamaño del texto */
+    font-size: 3em; /* Incrementa el tamaño del texto */
 }
 .typing::after {
     content: '|';
@@ -41,6 +105,371 @@ body {
     from, to { opacity: 1; }
     50% { opacity: 0; }
 }
-.special-font {
-    font-family: 'Lobster', cursive; /* Tipografía especial para "emprendedores" */
+.font-1 { font-family: 'Amatic SC', cursive; } 
+.font-2 { font-family: 'Courier Prime', monospace; } 
+.font-3 { font-family: 'Indie Flower', cursive; } 
+.font-4 { font-family: 'Lobster', cursive; }
+.font-5 { font-family: 'Press Start 2P', cursive;}
+
+.form-section {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Incrementa el padding para un diseño más espacioso */
+    margin-bottom: 40px;
+    text-align: center;
+}
+.form-section h2 {
+    font-size: 2.5em; /* Incrementa el tamaño del texto */
+    margin-bottom: 20px;
+    color: #004d00; /* Cambia el color del texto */
+}
+.form-section input[type="text"], .form-section input[type="email"] {
+    width: 100%;
+    padding: 15px; /* Incrementa el padding */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.2em; /* Incrementa el tamaño del texto */
+}
+.form-section button {
+    padding: 15px 30px; /* Incrementa el padding */
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em; /* Incrementa el tamaño del texto */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Añade una transición */
+}
+.form-section button:hover {
+    background-color: #218838; /* Cambia el color al pasar el mouse */
+}
+.form-section button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.hidden {
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 20px; /* Aumenta el espacio entre elementos */
+    padding-inline: 4em; /* Aumenta el padding lateral */
+    padding-bottom: 1em; /* Aumenta el padding inferior */
+    background-color: #0a192f;
+    border-radius: 20px;
+}
+
+.form-heading {
+    text-align: center;
+    margin: 2em;
+    color: #64ffda;
+    font-size: 1.5em; /* Incrementa el tamaño del texto */
+    background-color: transparent;
+    align-self: center;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em; /* Aumenta el espacio entre icono y campo de entrada */
+    border-radius: 10px;
+    padding: 1em; /* Incrementa el padding */
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 2em; /* Incrementa el padding lateral */
+    font-size: 1.2em; /* Incrementa el tamaño del texto */
+}
+
+.sendMessage-btn {
+    cursor: pointer;
+    padding: 1.5em; /* Incrementa el padding */
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #64ffda;
+    font-weight: bold;
+    outline: 2px solid #64ffda; /* Aumenta el borde */
+    transition: all ease-in-out 0.3s;
+    font-size: 1.2em; /* Incrementa el tamaño del texto */
+}
+
+.sendMessage-btn:hover {
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+    background-image: linear-gradient(163deg, #64ffda 0%, #64ffda 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+}
+
+.form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+
+.form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+
+.form-section {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Incrementa el padding para un diseño más espacioso */
+    margin-bottom: 40px;
+    text-align: center;
+}
+.form-section h2 {
+    font-size: 2.5em; /* Incrementa el tamaño del texto */
+    margin-bottom: 20px;
+    color: #004d00; /* Cambia el color del texto */
+}
+.form-section input[type="text"], .form-section input[type="email"] {
+    width: 100%;
+    padding: 15px; /* Incrementa el padding */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.2em; /* Incrementa el tamaño del texto */
+}
+.form-section button {
+    padding: 15px 30px; /* Incrementa el padding */
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em; /* Incrementa el tamaño del texto */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Añade una transición */
+}
+.form-section button:hover {
+    background-color: #218838; /* Cambia el color al pasar el mouse */
+}
+.form-section button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.hidden {
+    display: none;
+}
+.card-container {
+     display: flex;
+     gap: 20px; 
+
+
+
+
+
+     /* Espacio entre las tarjetas */ 
+    } 
+.card, .card1, .card2 {
+    background: linear-gradient(0deg, #000, #272727); 
+    border-radius: 16px; 
+    z-index: 1; } 
+
+.card { 
+    width: 380px; 
+    height: 508px; 
+    margin-bottom: 40px; 
+} 
+
+.card1 { 
+    width: 380px; 
+    height: 508px; 
+    margin-bottom: 40px; 
+} 
+
+.card2 { 
+    width: 380px; 
+    height: 508px; 
+    margin-bottom: 40px; 
+}
+
+.tools, .tools1, .tools2 { display: flex; 
+    align-items: center; 
+    padding: 9px; 
+} 
+.tools1 { 
+    padding: 18px; 
+} 
+.tools2 { 
+    padding: 27px; /* Incrementa el padding */ 
+} 
+.circle, .circle1, .circle2 { 
+    padding: 0 8px; 
+} 
+.circle1 { 
+    padding: 0 8px; 
+} 
+.circle2 { 
+    padding: 0 8px; /* Incrementa el padding */ 
+} 
+.box, .box1, .box2 {
+     display: inline-block; 
+     align-items: center; 
+     width: 20px; 
+     height: 20px; 
+     padding: 2px; 
+     border-radius: 50%; 
+    } 
+.box1 { 
+    width: 20px; 
+    height: 20px; 
+    padding: 2px; 
+} 
+.box2 { 
+    width: 20px; 
+    height: 20px; 
+    padding: 2px;
+} 
+.red, .red1, .red2 { 
+    background-color: #ff605c; 
+} 
+.yellow, .yellow1, .yellow2 { 
+    background-color: #ffbd44; 
+} 
+.green, .green1, .green2 { 
+    background-color: #00ca4e; 
+}
+
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #000000;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #000000;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #e30808;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #f500b4;
+    color: #fff;
+  }
+  
+
+
+
+  .footer {
+    display: block;
+    align-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #004d00, #333);
+    color: white;
+    padding: 100px; /* Incrementa el padding */
+    border-radius: 8px;
+    margin-top: 100px;
+    width: 90%;
+    max-width: 1000px; /* Incrementa el tamaño máximo del contenedor */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px; /* Añade un margen inferior para separar el encabezado del formulario */
+}
+.texto{
+    text-align: center;
 }
