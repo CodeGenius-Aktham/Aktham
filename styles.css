@@ -101,7 +101,8 @@ body {
     } 
 
     .header{
-        height: 100px;
+        width: 100px;
+        height: 200px;
         align-items: none;
     }
 }
