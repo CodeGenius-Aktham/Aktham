@@ -106,6 +106,10 @@ body {
         height: 400px;
         align-items: none;
     }
+
+    .profile-pic{
+        margin-left: 40px;
+    }
 }
 
 @media (max-width: 600px) {
