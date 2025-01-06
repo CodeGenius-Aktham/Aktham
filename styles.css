@@ -84,68 +84,65 @@ body {
 
 
 
-
+/* Media Query para dispositivos con un ancho máximo de 2340px */
 @media (max-width: 2340px) {
     .typing { 
-        animation: none !important; /* Desactiva las animaciones */
-        border-right: none !important; /* Elimina el cursor parpadeante */
+        animation: none !important;
+        border-right: none !important;
         font-size: 20px;
         margin-left: 40px;
-        display: none;
+        display: none !important; /* Añadido !important */
     }
 
     .highlight {
-        animation: none !important; /* Desactiva el cambio de fuente */
+        animation: none !important;
     }
 
     .card, .card2 {
-        display: none !important; /* Oculta las cartas */
+        display: none !important;
     } 
 
-    .header{
+    .header {
         width: 10px;
         height: 400px;
         align-items: none;
     }
 
-    .profile-pic{
+    .profile-pic {
         margin-left: 40px;
     }
 }
 
+/* Media Query para dispositivos con un ancho máximo de 600px */
 @media (max-width: 600px) {
     .typing {
-        font-size: 0.4em; /* Aún más pequeño para pantallas más pequeñas */
+        font-size: 0.4em !important; /* Añadido !important */
     }
 }
 
-
 /*---------------------------------------------------------------------------*/
 
-
-
-
-
-
-
-
 .profile-pic {
-    width: 250px; /* Incrementa el tamaño de la imagen */
+    width: 250px;
     height: 250px;
     object-fit: cover;
-    margin-right: 30px; /* Incrementa el margen */
-    flex-shrink: 0; /* Mantiene el tamaño de la imagen fijo */
+    margin-right: 30px;
+    flex-shrink: 0;
 }
+
 .text-container {
-    flex-grow: 1; /* Hace que el contenedor del texto ocupe todo el espacio disponible */
+    flex-grow: 1;
 }
+
 .typing {
-    font-size: 3em; /* Incrementa el tamaño del texto */
+    font-size: 3em;
 }
+
 .typing::after {
     content: '|';
     animation: blink 0.7s step-end infinite;
 }
+
 @keyframes blink {
     from, to { opacity: 1; }
     50% { opacity: 0; }
