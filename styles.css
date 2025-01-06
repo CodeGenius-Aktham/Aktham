@@ -85,26 +85,7 @@ body {
 
 
 
-@media (max-width: 975px) {
-    .typing { 
-        animation: none !important; /* Desactiva las animaciones */
-        border-right: none !important; /* Elimina el cursor parpadeante */
-        font-size: 0.6em;
-    }
 
-    .highlight {
-        animation: none !important; /* Desactiva el cambio de fuente */
-    }
-
-     .card, .card2 {
-        display: none !important; /* Oculta las cartas */
-     } 
-
-     .header{
-        height: 90%;
-
-     }
-}
 
 /*---------------------------------------------------------------------------*/
 
