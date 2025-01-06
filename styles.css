@@ -89,7 +89,8 @@ body {
     .typing { 
         animation: none !important; /* Desactiva las animaciones */
         border-right: none !important; /* Elimina el cursor parpadeante */
-        font-size: 0.6em;
+        font-size: 20px;
+        margin-left: 40px;
         display: none;
     }
 
