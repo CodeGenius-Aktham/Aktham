@@ -102,6 +102,7 @@ body {
 
     .header{
         height: 90%;
+        align-items: none;
     }
 }
 
