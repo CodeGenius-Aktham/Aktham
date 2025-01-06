@@ -85,32 +85,26 @@ body {
 
 
 /* Media Query para dispositivos con un ancho máximo de 2340px */
-@media (max-width: 900px) {
+@media (max-width: 975px) {
     .typing { 
-        animation: none !important;
-        border-right: none !important;
-        font-size: 20px;
-        margin-left: 40px;
-        display: none !important; /* Añadido !important */
+        animation: none !important; /* Desactiva las animaciones */
+        border-right: none !important; /* Elimina el cursor parpadeante */
+        
     }
 
     .highlight {
-        animation: none !important;
+        animation: none !important; /* Desactiva el cambio de fuente */
     }
 
-    .card, .card2 {
-        display: none !important;
-    } 
+     .card, .card2 {
+        display: none !important; /* Oculta las cartas */
+     } 
 
-    .header {
-        width: 10px;
-        height: 400px;
-        align-items: none;
-    }
+     .header{
+        height: 90%;
 
-    .profile-pic { width: 250px; height: 250px; object-fit: cover; margin: 0 auto; /* Centra la imagen horizontalmente */ flex-shrink: 0; }
+     }
 }
-
 /* Media Query para dispositivos con un ancho máximo de 600px */
 @media (max-width: 600px) {
     .typing {
