@@ -85,7 +85,7 @@ body {
 
 
 /* Media Query para dispositivos con un ancho máximo de 2340px */
-@media (max-width: 2340px) {
+@media (max-width: 900px) {
     .typing { 
         animation: none !important;
         border-right: none !important;
