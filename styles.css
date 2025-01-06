@@ -108,9 +108,7 @@ body {
         align-items: none;
     }
 
-    .profile-pic {
-        margin-left: 40px;
-    }
+    .profile-pic { width: 250px; height: 250px; object-fit: cover; margin: 0 auto; /* Centra la imagen horizontalmente */ flex-shrink: 0; }
 }
 
 /* Media Query para dispositivos con un ancho máximo de 600px */
