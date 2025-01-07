@@ -101,7 +101,10 @@ body {
     } 
 
     .header{
-        height: 90%;
+        height: 90px;
+    }
+    .fotoF{
+        margin-left: -40px;
     }
 }
 
