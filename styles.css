@@ -101,6 +101,7 @@ body {
     } 
 
     .header{
+        display: block;
         height: 90px;
     }
     .fotoF{
