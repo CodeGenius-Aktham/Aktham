@@ -99,7 +99,9 @@ body {
     .card, .card2 {
         display: none !important; /* Oculta las cartas */
     } 
-
+    .profile-pic{
+        margin-top: 300px;
+    }
     .header{
         display: block;
         height: 90px;
