@@ -114,18 +114,15 @@ body {
         width: 100px ;
     }
    
-    .fotoF{
-        display: flex ;
-        margin-left: -633px;
-    }
+    
     .textoF{
         display: flex;
-        margin-left: -650px;
-        margin-top: 200px;
+        margin-left: -90px;
+        margin-top: 400px;
     }
      .footer{
-        display: block ;
-        height: 100px;
+        display: flex ;
+        height: 300px;
         width: 190px !important;
         
     }
@@ -523,14 +520,14 @@ body {
     padding: 100px; /* Incrementa el padding */
     border-radius: 8px;
     margin-top: 100px;
-    width: 90%;
+    width: 100%;
     max-width: 1000px; /* Incrementa el tamaño máximo del contenedor */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 100px; /* Añade un margen inferior para separar el encabezado del formulario */
   }
 
-.fotoF{
-    margin-left: 233px;
+.profile-pic-f{
+    margin-left: -323px;
     width: 200px;
 }
 
