@@ -85,7 +85,7 @@ body {
 
 
 
-@media (max-width: 975px) {
+@media (max-width: 600px) {
     .typing { 
         animation: none !important; /* Desactiva las animaciones */
         border-right: none !important; /* Elimina el cursor parpadeante */
