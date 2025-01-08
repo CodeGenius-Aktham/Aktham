@@ -87,9 +87,13 @@ body {
 
 @media (max-width: 768px) {
     .typing { 
+        display: block;
         animation: none !important; /* Desactiva las animaciones */
         border-right: none !important; /* Elimina el cursor parpadeante */
-        font-size: 0.8em !important;
+        font-size: 1em !important;
+        margin-left: -270px;
+        margin-top: 300px;
+        text-align: center;
     }
 
     .highlight {
@@ -100,15 +104,27 @@ body {
         display: none !important; /* Oculta las cartas */
     } 
     .profile-pic{
-        margin-top: 50px;
+        margin-top: -90px;
+        margin-left: -92px;
     }
     .header{
-        display: block;
-        height: 90px;
-        width: 90px ;
+        display: flex;
+        height: 200px;
+        width: 100px ;
     }
     .fotoF{
-        margin-left: -400px;
+        display: flex;
+        margin-left: -633px;
+    }
+    .textoF{
+        display: flex;
+        margin-left: -650px;
+        margin-top:200px;
+    }
+    .footer{
+        display: block;
+        height: 100px;
+        width: 190px !important;
     }
 }
 
@@ -511,6 +527,10 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 100px; /* Añade un margen inferior para separar el encabezado del formulario */
 }
-.texto{
+.fotoF{
+    margin-left: 233px;
+    width: 200px;
+}
+.textoF{
     text-align: center;
 }
