@@ -514,8 +514,8 @@ body {
 
 
   .footer {
-    display: block;
-    align-content: center;
+    display: flex;
+    
     align-items: center;
     background: linear-gradient(to right, #004d00, #333);
     color: white;
