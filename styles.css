@@ -100,11 +100,12 @@ body {
         display: none !important; /* Oculta las cartas */
     } 
     .profile-pic{
-        margin-top: 30px;
+        margin-top: 50px;
     }
     .header{
         display: block;
         height: 90px;
+        width: 90px ;
     }
     .fotoF{
         margin-left: -400px;
