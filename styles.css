@@ -94,10 +94,11 @@ body {
         margin-left: -270px;
         margin-top: 300px;
         text-align: center;
+        
     }
 
     .highlight {
-        animation: none !important; /* Desactiva el cambio de fuente */
+        animation:  none !important; /* Desactiva el cambio de fuente */
     }
 
     .card, .card2 {
@@ -112,19 +113,21 @@ body {
         height: 200px;
         width: 100px ;
     }
+   
     .fotoF{
-        display: flex;
+        display: flex ;
         margin-left: -633px;
     }
     .textoF{
         display: flex;
         margin-left: -650px;
-        margin-top:200px;
+        margin-top: 200px;
     }
-    .footer{
-        display: block;
+     .footer{
+        display: block ;
         height: 100px;
         width: 190px !important;
+        
     }
 }
 
@@ -351,6 +354,8 @@ body {
 
      /* Espacio entre las tarjetas */ 
     } 
+
+    
 .card, .card1, .card2 {
     background: linear-gradient(0deg, #000, #272727); 
     border-radius: 16px; 
@@ -510,12 +515,8 @@ body {
     color: #fff;
   }
   
-
-
-
   .footer {
     display: flex;
-    
     align-items: center;
     background: linear-gradient(to right, #004d00, #333);
     color: white;
@@ -526,11 +527,13 @@ body {
     max-width: 1000px; /* Incrementa el tamaño máximo del contenedor */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 100px; /* Añade un margen inferior para separar el encabezado del formulario */
-}
+  }
+
 .fotoF{
     margin-left: 233px;
     width: 200px;
 }
+
 .textoF{
     text-align: center;
 }
